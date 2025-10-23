@@ -1,134 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SGJT KICKS | Sneakers Exclusivas</title>
   <meta name="description" content="Compra sneakers exclusivas en SGJT KICKS. Modelos originales Nike Air Max, Air Force 1, Dunk Low y más. Contacta por WhatsApp para comprar." />
-  <meta name="keywords" content="sneakers, nike, air max, air force 1, dunk low, tienda de zapatillas, SGJT KICKS" />
+  <meta name="keywords" content="sneakers, nike, air max, air force 1, jordan, tienda de zapatillas, SGJT KICKS" />
   <meta name="author" content="SGJT KICKS" />
-  <meta name="google-site-verification" content="n5msNr7NR_ogh2cyz15ZfcslGzMn2jw3LbTyLoCE4h0" />
-  
+
   <style>
     /* Reset y tipografía */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #121212;
-      color: #f1f1f1;
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: #121212; color: #f1f1f1;
+      line-height: 1.6; min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
       padding: 30px 15px;
     }
-    header {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      letter-spacing: 5px;
-      color: #00b894;
-      text-shadow: 0 0 8px #00b894;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #bbb;
-      margin-top: 8px;
-    }
+    header { margin-bottom: 40px; text-align: center; }
+    header h1 { font-size: 3rem; letter-spacing: 5px; color: #00b894; text-shadow: 0 0 8px #00b894; }
+    header p { font-size: 1.2rem; color: #bbb; margin-top: 8px; }
 
     main {
-      max-width: 1000px;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 1000px; width: 100%;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 25px;
     }
 
     .product-card {
-      background: #1e1e1e;
-      border-radius: 12px;
+      background: #1e1e1e; border-radius: 12px;
       box-shadow: 0 8px 15px rgba(0, 184, 148, 0.3);
-      padding: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex; flex-direction: column; justify-content: space-between;
     }
     .product-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 25px rgba(0, 184, 148, 0.6);
     }
     .product-image {
-      width: 100%;
-      height: 200px;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      width: 100%; height: 200px;
+      background-position: center; background-size: contain; background-repeat: no-repeat;
+      margin-bottom: 20px; border-radius: 10px;
     }
-    .product-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: #00b894;
-    }
-    .product-price {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      color: #fff;
-    }
+    .product-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; color: #00b894; }
+    .product-price { font-size: 1.25rem; font-weight: 600; margin-bottom: 20px; color: #fff; }
     .buy-btn {
-      background: #00b894;
-      color: #121212;
-      border: none;
-      padding: 12px 0;
-      font-size: 1.1rem;
-      font-weight: 700;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 184, 148, 0.4);
+      background: #00b894; color: #121212; border: none; padding: 12px 0;
+      font-size: 1.1rem; font-weight: 700; cursor: pointer; border-radius: 8px;
+      transition: background 0.3s ease; box-shadow: 0 4px 10px rgba(0, 184, 148, 0.4);
     }
-    .buy-btn:hover {
-      background: #019e75;
-    }
-    
-    footer {
-      margin-top: 50px;
-      color: #555;
-      font-size: 0.9rem;
-    }
-    a.whatsapp-link {
-      color: #00b894;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    a.whatsapp-link:hover {
-      text-decoration: underline;
-    }
+    .buy-btn:hover { background: #019e75; }
+    footer { margin-top: 50px; color: #555; font-size: 0.9rem; }
+    a.whatsapp-link { color: #00b894; text-decoration: none; font-weight: 700; }
+    a.whatsapp-link:hover { text-decoration: underline; }
 
-    /* Responsive */
     @media (max-width: 480px) {
-      header h1 {
-        font-size: 2rem;
-        letter-spacing: 3px;
-      }
-      main {
-        grid-template-columns: 1fr;
-      }
-      .product-image {
-        height: 180px;
-      }
+      header h1 { font-size: 2rem; letter-spacing: 3px; }
+      main { grid-template-columns: 1fr; }
+      .product-image { height: 180px; }
     }
   </style>
 </head>
@@ -140,25 +70,28 @@
   </header>
 
   <main>
+    <!-- Nike Air Force 1 -->
     <section class="product-card">
-      <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80');" aria-label="Nike Air Max 270"></div>
-      <h2 class="product-title">Nike Air Max 270</h2>
-      <p class="product-price">$150.00 USD</p>
-      <button class="buy-btn" onclick="comprar('Nike Air Max 270')">Comprar por WhatsApp</button>
-    </section>
-
-    <section class="product-card">
-      <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1528701800489-8b1f01a6f56b?auto=format&fit=crop&w=400&q=80');" aria-label="Nike Air Force 1"></div>
+      <div class="product-image" style="background-image: url('https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/7f9c5b7d-3d1f-4a4e-8b7e-4c4c5d0b8b2b/air-force-1-07-tenis-para-mujer-4z9zD9.jpg');" aria-label="Nike Air Force 1"></div>
       <h2 class="product-title">Nike Air Force 1</h2>
-      <p class="product-price">$110.00 USD</p>
+      <p class="product-price">$2,599 MXN</p>
       <button class="buy-btn" onclick="comprar('Nike Air Force 1')">Comprar por WhatsApp</button>
     </section>
 
+    <!-- Air Jordan 1 Triple White -->
     <section class="product-card">
-      <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1530654576152-9a6d33c81214?auto=format&fit=crop&w=400&q=80');" aria-label="Nike Dunk Low"></div>
-      <h2 class="product-title">Nike Dunk Low</h2>
-      <p class="product-price">$100.00 USD</p>
-      <button class="buy-btn" onclick="comprar('Nike Dunk Low')">Comprar por WhatsApp</button>
+      <div class="product-image" style="background-image: url('https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/9d9c5b7d-3d1f-4a4e-8b7e-4c4c5d0b8b2b/air-jordan-1-mid-tenis-para-hombre-4z9zD9.jpg');" aria-label="Air Jordan 1 Triple White"></div>
+      <h2 class="product-title">Air Jordan 1 Triple White</h2>
+      <p class="product-price">$2,400 MXN</p>
+      <button class="buy-btn" onclick="comprar('Air Jordan 1 Triple White')">Comprar por WhatsApp</button>
+    </section>
+
+    <!-- Nike Air Max 90 -->
+    <section class="product-card">
+      <div class="product-image" style="background-image: url('https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/9d9c5b7d-3d1f-4a4e-8b7e-4c4c5d0b8b2b/air-max-90-tenis-para-hombre-4z9zD9.jpg');" aria-label="Nike Air Max 90"></div>
+      <h2 class="product-title">Nike Air Max 90</h2>
+      <p class="product-price">$2,129 MXN</p>
+      <button class="buy-btn" onclick="comprar('Nike Air Max 90')">Comprar por WhatsApp</button>
     </section>
   </main>
 
@@ -168,7 +101,7 @@
   </footer>
 
   <script>
-    const miNumero = '5211234567890'; // Cambia a tu número con código de país sin símbolos ni espacios
+    const miNumero = '525549475382'; // Cambia a tu número con código de país
 
     function comprar(producto) {
       const mensaje = encodeURIComponent(`Hola, estoy interesado en comprar: ${producto} en SGJT KICKS. Por favor, contáctame.`);
@@ -179,5 +112,7 @@
 
 </body>
 </html>
+
+
 
 
