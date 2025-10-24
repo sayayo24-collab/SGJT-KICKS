@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SGJT KICKS | Sneakers Exclusivas</title>
-  <meta name="description" content="Compra sneakers exclusivas en SGJT KICKS. Modelos originales Nike Air Max, Air Force 1, Dunk Low y más. Contacta por WhatsApp para comprar." />
-  <meta name="keywords" content="sneakers, nike, air max, air force 1, jordan, tienda de zapatillas, SGJT KICKS" />
+  <meta name="description" content="Compra sneakers exclusivas en SGJT KICKS. Modelos originales Nike, Adidas y más. Contacta por WhatsApp para comprar." />
+  <meta name="keywords" content="sneakers, nike, adidas, air max, air force 1, jordan, samba, gazelle, campus, tienda de zapatillas, SGJT KICKS" />
   <meta name="author" content="SGJT KICKS" />
 
   <style>
-    /* Reset y tipografía */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,32 +32,35 @@
       box-shadow: 0 8px 15px rgba(0, 184, 148, 0.3);
       padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex; flex-direction: column; justify-content: space-between;
+      align-items: center;
     }
     .product-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 25px rgba(0, 184, 148, 0.6);
     }
     .product-image {
-      width: 100%; height: 200px;
-      background-position: center; background-size: contain; background-repeat: no-repeat;
+      width: 100%; max-height: 200px;
+      object-fit: contain;
       margin-bottom: 20px; border-radius: 10px;
+      background: #000;
     }
-    .product-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; color: #00b894; }
+    .product-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; color: #00b894; text-align: center; }
     .product-price { font-size: 1.25rem; font-weight: 600; margin-bottom: 20px; color: #fff; }
     .buy-btn {
       background: #00b894; color: #121212; border: none; padding: 12px 0;
       font-size: 1.1rem; font-weight: 700; cursor: pointer; border-radius: 8px;
       transition: background 0.3s ease; box-shadow: 0 4px 10px rgba(0, 184, 148, 0.4);
+      width: 100%;
     }
     .buy-btn:hover { background: #019e75; }
-    footer { margin-top: 50px; color: #555; font-size: 0.9rem; }
+    footer { margin-top: 50px; color: #555; font-size: 0.9rem; text-align: center; }
     a.whatsapp-link { color: #00b894; text-decoration: none; font-weight: 700; }
     a.whatsapp-link:hover { text-decoration: underline; }
 
     @media (max-width: 480px) {
       header h1 { font-size: 2rem; letter-spacing: 3px; }
       main { grid-template-columns: 1fr; }
-      .product-image { height: 180px; }
+      .product-image { max-height: 180px; }
     }
   </style>
 </head>
@@ -66,21 +68,21 @@
 
   <header>
     <h1>SGJT KICKS</h1>
-    <p>Sneakers exclusivas, originales y únicas. Compra fácil y segura por WhatsApp.</p>
+    <p>Sneakers exclusivas, originales y únicas. Cotiza facil tu talla y asegura tu compra por WhatsApp.</p>
   </header>
 
   <main>
     <!-- Nike Air Force 1 -->
     <section class="product-card">
-      <div class="product-image" style="background-image: url('https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/7f9c5b7d-3d1f-4a4e-8b7e-4c4c5d0b8b2b/air-force-1-07-tenis-para-mujer-4z9zD9.jpg');" aria-label="Nike Air Force 1"></div>
+      <img src="1024px-Nike_air_Force_1_white_on_white.jpg" alt="Nike Air Force 1" class="product-image">
       <h2 class="product-title">Nike Air Force 1</h2>
-      <p class="product-price">$2,599 MXN</p>
+      <p class="product-price"> Desde $2,599 MXN</p>
       <button class="buy-btn" onclick="comprar('Nike Air Force 1')">Comprar por WhatsApp</button>
     </section>
 
     <!-- Air Jordan 1 Triple White -->
     <section class="product-card">
-      <div class="product-image" style="background-image: url('https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/9d9c5b7d-3d1f-4a4e-8b7e-4c4c5d0b8b2b/air-jordan-1-mid-tenis-para-hombre-4z9zD9.jpg');" aria-label="Air Jordan 1 Triple White"></div>
+      <img src="jordan 1.jpg" alt="Air Jordan 1 Triple White" class="product-image">
       <h2 class="product-title">Air Jordan 1 Triple White</h2>
       <p class="product-price">$2,400 MXN</p>
       <button class="buy-btn" onclick="comprar('Air Jordan 1 Triple White')">Comprar por WhatsApp</button>
@@ -88,16 +90,40 @@
 
     <!-- Nike Air Max 90 -->
     <section class="product-card">
-      <div class="product-image" style="background-image: url('https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/9d9c5b7d-3d1f-4a4e-8b7e-4c4c5d0b8b2b/air-max-90-tenis-para-hombre-4z9zD9.jpg');" aria-label="Nike Air Max 90"></div>
-      <h2 class="product-title">Nike Air Max 90</h2>
+      <img src="airmax 90 camo.jpg" alt="Nike Air Max 90 " class="product-image">
+      <h2 class="product-title">Nike Air Max 90 Camo</h2>
       <p class="product-price">$2,129 MXN</p>
       <button class="buy-btn" onclick="comprar('Nike Air Max 90')">Comprar por WhatsApp</button>
+    </section>
+
+    <!-- Adidas Samba -->
+    <section class="product-card">
+      <img src="adidas samba.jpg" alt="Adidas Samba" class="product-image">
+      <h2 class="product-title">Adidas Samba</h2>
+      <p class="product-price">$2,700 MXN</p>
+      <button class="buy-btn" onclick="comprar('Adidas Samba')">Comprar por WhatsApp</button>
+    </section>
+
+    <!-- Campus Bad Bunny "Chulky Brown" -->
+    <section class="product-card">
+      <img src="bad bunny.jpg" alt="Campus Bad Bunny Chulky Brown" class="product-image">
+      <h2 class="product-title">Campus Bad Bunny "Chalky Brown"</h2>
+      <p class="product-price">Desde $4,000 MXN</p>
+      <button class="buy-btn" onclick="comprar('Campus Bad Bunny Chulky Brown')">Comprar por WhatsApp</button>
+    </section>
+
+    <!-- Gazelle Indoor -->
+    <section class="product-card">
+      <img src="gazelle.jpg" alt="Gazelle Indoor" class="product-image">
+      <h2 class="product-title">Gazelle Indoor</h2>
+      <p class="product-price">$2,900 MXN</p>
+      <button class="buy-btn" onclick="comprar('Gazelle Indoor')">Comprar por WhatsApp</button>
     </section>
   </main>
 
   <footer>
     <p>© 2025 SGJT KICKS. Todos los derechos reservados.</p>
-    <p>Contáctanos por <a href="https://wa.me/5211234567890" target="_blank" class="whatsapp-link" rel="noopener noreferrer">WhatsApp</a></p>
+    <p>Contáctanos por <a href="https://wa.me/525549475382" target="_blank" class="whatsapp-link" rel="noopener noreferrer">WhatsApp</a></p>
   </footer>
 
   <script>
@@ -106,7 +132,7 @@
     function comprar(producto) {
       const mensaje = encodeURIComponent(`Hola, estoy interesado en comprar: ${producto} en SGJT KICKS. Por favor, contáctame.`);
       const url = `https://wa.me/${miNumero}?text=${mensaje}`;
-      window.open(url, '_blank');
+      window.open(url, '_blank', 'noopener,noreferrer');
     }
   </script>
 
